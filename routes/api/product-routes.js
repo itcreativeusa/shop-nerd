@@ -6,9 +6,8 @@ const { Product, Category, Tag, ProductTag } = require("../../models");
 // get all products
 router.get("/", (req, res) => {
   // find all products
-  // be sure to include its associated Category and Tag data
   Product.findAll({
-    // Include the Category and Tag model
+    // include its associated Category and Tag data
     include: [
       { model: Category, as: "category" },
       { model: Tag, as: "tags" },
@@ -21,8 +20,8 @@ router.get("/", (req, res) => {
 // get one product
 router.get("/:id", (req, res) => {
   // find a single product by its `id`
-  // be sure to include its associated Category and Tag data
   Product.findByPk(req.params.id, {
+    // include its associated Category and Tag data
     include: [
       { model: Category, as: "category" },
       { model: Tag, as: "tags" },
@@ -39,6 +38,7 @@ router.post("/", (req, res) => {
       product_name: "Basketball",
       price: 200.00,
       stock: 3,
+      category_id: 1,
       tagIds: [1, 2, 3, 4]
     }
   */
@@ -99,7 +99,7 @@ router.put("/:id", (req, res) => {
         ProductTag.destroy({ where: { id: productTagsToRemove } }),
         ProductTag.bulkCreate(newProductTags),
       ]);
-    })
+    }) //log the result of the detete operation
     .then((updatedProductTags) => res.json({ message: "Product updated" }))
     .catch((err) => {
       // console.log(err);
@@ -111,6 +111,7 @@ router.delete("/:id", (req, res) => {
   // delete one product by its `id` value
   Product.destroy({ where: { id: req.params.id } })
     .then((productData) => {
+      //log the result of the detete operation
       res.json({ message: "Product deleted" });
     })
     .catch((err) => res.json(err));
