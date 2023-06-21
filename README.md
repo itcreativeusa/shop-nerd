@@ -8,8 +8,7 @@ https://github.com/itcreativeusa/shop-nerd
 Youtube video guide
 https://youtu.be/EFswqMyVQc8
 
-ShopNerd is an E-Commerce Back End.
-It utilizes Object-Relational Mapping (ORM), Express.js API with Sequelize to interact with a MySQL database.
+npm start
 
 ## Table of Contents
 
