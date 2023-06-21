@@ -17,12 +17,16 @@ router.get("/:id", (req, res) => {
   // find one category by its `id` value
   Category.findByPk(req.params.id, {
     // Include the Product model
-    include: [{ model: Product, as: "products" }],
+    include: [
+      {
+        model: Product,
+        as: "products",
+      },
+    ],
   }).then((categoryData) => {
     res.json(categoryData);
   });
 });
-
 router.post("/", (req, res) => {
   // create a new category
   Category.create(req.body)
