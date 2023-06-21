@@ -39,15 +39,19 @@ Screenshots located in `./assets/` folder.
 
 The following screenshot shows the application's GET routes to return all products being tested in Insomnia:
 
-![Get product](./assets/screenshot-get-product.png)
+![Get products](./assets/get-products.png)
 
-The following screenshot shows the application's POST routes to create a new category being tested in Insomnia:
+The following screenshot shows the application's POST routes to create a new product being tested in Insomnia:
 
-![Create category](./assets/screenshot-create-category.png)
+![Create new product](./assets/create-new-product.png)
 
-The following screenshot shows the application's DELETE routes to delete a tag being tested in Insomnia:
+The following screenshot shows the application's GET routes to return all categories being tested in Insomnia:
 
-![Delete tag](./assets/screenshot-delete-tags.png)
+![Get categories](./assets/get-categories.png)
+
+The following screenshot shows the application's GET routes to return all categories being tested in Insomnia:
+
+![Get tags](./assets/get-tags.png)
 
 ## Credits
 
