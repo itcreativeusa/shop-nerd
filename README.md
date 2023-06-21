@@ -49,7 +49,7 @@ The following screenshot shows the application's GET routes to return all catego
 
 ![Get categories](./assets/get-categories.png)
 
-The following screenshot shows the application's GET routes to return all categories being tested in Insomnia:
+The following screenshot shows the application's GET routes to return all tags being tested in Insomnia:
 
 ![Get tags](./assets/get-tags.png)
 
