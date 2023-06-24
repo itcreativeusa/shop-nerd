@@ -2,13 +2,14 @@
 
 ## Description
 
+This is an e-commerce back end application that uses Express.js API and Sequelize to interact with a MySQL database.
+With this back end, users can easily add, update, and delete products, categories, and tags. The application uses Sequelize, an ORM tool that makes working with databases easier.
+
 Deployed application link on GitHub
 https://github.com/itcreativeusa/shop-nerd
 
 Youtube video guide
-https://youtu.be/EFswqMyVQc8
-
-npm start
+https://youtu.be/F5iqHqeqg1w
 
 ## Table of Contents
 
@@ -29,8 +30,12 @@ No special requirements
 
 ## Usage
 
-Use command-line to run an application `npm start` to start the server.
-
+Use command-line to run the application.
+Run `npm install` to install the required dependencies.
+Set up a MySQL database.
+Update the configuration in the `.env` file.
+Run the database using `node seeds/index.js` to create the necessary tables.
+Run `npm start` to start the server.
 Open Insomnia application to test API POST, PUT, and DELETE routes.
 
 ## Mock-Up
