@@ -9,7 +9,7 @@ Deployed application link on GitHub
 https://github.com/itcreativeusa/shop-nerd
 
 Youtube video guide
-https://youtu.be/F5iqHqeqg1w
+https://youtu.be/TTTHhA8wzDM
 
 ## Table of Contents
 
