@@ -1,4 +1,6 @@
+// Initialize express router
 const router = require("express").Router();
+// Import the models to use its database functions.
 const { Tag, Product, ProductTag } = require("../../models");
 
 // The `/api/tags` endpoint

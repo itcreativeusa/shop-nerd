@@ -1,3 +1,4 @@
+// Initialize express router
 const router = require("express").Router();
 const { Category, Product } = require("../../models");
 
@@ -60,5 +61,5 @@ router.delete("/:id", (req, res) => {
     })
     .catch((err) => res.json(err));
 });
-
+// Module exports
 module.exports = router;
