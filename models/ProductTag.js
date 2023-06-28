@@ -4,6 +4,7 @@ const sequelize = require("../config/connection");
 
 class ProductTag extends Model {}
 
+//Model for ProductTag
 ProductTag.init(
   {
     // define columns
@@ -30,5 +31,5 @@ ProductTag.init(
     modelName: "product_tag",
   }
 );
-
+// Module exports
 module.exports = ProductTag;

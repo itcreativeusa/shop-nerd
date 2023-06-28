@@ -31,7 +31,7 @@ Tag.belongsToMany(Product, {
   foreignKey: "tag_id",
   onDelete: "CASCADE",
 });
-
+// Module exports
 module.exports = {
   Product,
   Category,
